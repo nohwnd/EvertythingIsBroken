@@ -5,6 +5,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "##vso[task.logissue type=error]Something went very wrong."
+      exit 1
+    pwsh: true
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
