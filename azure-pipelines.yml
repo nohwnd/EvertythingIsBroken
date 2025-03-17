@@ -10,7 +10,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Write-Host "##vso[task.logissue type=error;sourcepath=TestProject1/Test1.cs;linenumber=11;columnnumber=1;code=100;]Assert.AreEqual failed. Expected:<1>. Actual:<2>."
+      Write-Host "##vso[task.logissue type=error;sourcepath=TestProject1/Test1.cs;linenumber=11;columnnumber=1;code=100;]Assert.AreEqual failed.%0AExpected:<1>.%0AActual:<2>."
       exit 1
     pwsh: true
 - task: DotNetCoreCLI@2
