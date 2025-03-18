@@ -16,4 +16,8 @@
     <ProjectReference Include="..\BrokenLid\BrokenLid.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Extensions.AzureDevOps" Version="1.8.0-dev" />
+  </ItemGroup>
+
 </Project>
