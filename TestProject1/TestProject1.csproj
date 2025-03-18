@@ -1,4 +1,4 @@
-﻿<Project Sdk="MSTest.Sdk/3.8.2">
+﻿<Project Sdk="MSTest.Sdk/3.10.0-dev">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -14,6 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BrokenLid\BrokenLid.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Extensions.AzureDevOps" Version="1.8.0-dev" />
   </ItemGroup>
 
 </Project>
