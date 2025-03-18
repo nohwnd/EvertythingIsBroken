@@ -21,7 +21,7 @@ steps:
   inputs:
     command: 'run'
     projects: 'TestProject1'
-    arguments: '--report-azdo --report-azdo-severity warning'
+    arguments: '--report-azdo'
 
 - task: VSTest@3
   inputs:
